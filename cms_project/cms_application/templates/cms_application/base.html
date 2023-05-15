@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+{% load admin_urls %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CMS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+    <link href="{% static 'css/Base.css' %}" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light bg-light justify-content-between">
+            <div class="brand">
+                <a class="add" href="{% url 'admin:index' %}">Admin</a>
+                <h1>Welcome to CMS Application</h1>
+
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
+
